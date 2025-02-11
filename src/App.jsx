@@ -1,22 +1,22 @@
-import React from "react";
+import React from 'react';
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import Blogs from "./pages/Blogs";
-import NoPage from "./pages/NoPage";
-import PlacesRoute from "./pages/PlacesRoute";
-import About from "./pages/About";
-import BlogsDetails from "./pages/BlogsDetails";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './pages/Layout';
+import Home from './pages/Home';
+import Blogs from './pages/Blogs';
+import NoPage from './pages/NoPage';
+import PlacesRoute from './pages/PlacesRoute';
+import About from './pages/About';
+import BlogsDetails from './pages/BlogsDetails';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const App = () => {
   React.useEffect(() => {
     AOS.init({
       offset: 100,
       duration: 900,
-      easing: "ease-in-sine",
+      easing: 'ease-in-sine',
       delay: 100,
     });
     AOS.refresh();
